@@ -1,0 +1,31 @@
+Given 2 numbers N and K followed by elements of N .Print 'yes' if K exists else print 'no'.
+Sample Testcase :
+INPUT
+4 2
+1 2 3 3
+OUTPUT
+yes
+
+code :
+def check_element_existence(numbers, k):
+  """Checks if element k exists in the list of numbers.
+
+  Args:
+    numbers: A list of numbers.
+    k: The element to check.
+
+  Returns:
+    True if k exists, False otherwise.
+  """
+
+  return k in numbers
+
+# Get input from the user
+n, k = map(int, input().split())
+numbers = list(map(int, input().split()))
+
+# Check if k exists and print the result
+if check_element_existence(numbers, k):
+  print("yes")
+else:
+  print("no")
