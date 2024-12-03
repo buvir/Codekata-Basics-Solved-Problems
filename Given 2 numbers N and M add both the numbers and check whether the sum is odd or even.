@@ -1,0 +1,13 @@
+Given 2 numbers N and M add both the numbers and check whether the sum is odd or even.
+Sample Testcase :
+INPUT
+9 2
+OUTPUT
+odd
+
+N,M=(int(no) for no in input().split())
+result=(N+M)%2
+if result==0:
+  print('even')
+else:
+  print('odd')
